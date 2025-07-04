@@ -65,14 +65,21 @@
             [class^="container__main__" ]:hover{
                 color:red;
             }
-            @media(max-width:568px){
-                .parent_menu{
-                    display: none;
-                }
-                .parent{
-                    justify-content: center;
-                }
-                .parent__logo{
-                    width: 20px;
-                }
+           @media(min-width:601px) and (max-width:1024px){
+            .container__main{
+                justify-content: space-evenly;
             }
+            [class^="container__main__"]{
+                width: 45%;
+            }
+           }
+           @media(max-width:600px){
+           .container__main{
+            flex-direction: column;
+            align-items: center;
+           }
+            [class^="container__main__"]{
+                width: 90%;
+            }
+           }
+           

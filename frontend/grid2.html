@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID2</title>
+        <style>
+            .body{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 10% 80%;
+                grid-template-columns: 30% 30% 40%;
+            }
+            .parent__header{
+                background-color: yellow;
+                grid-column: 1/4;
+                grid-row:1/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent__search{
+                background-color: rgb(184, 84, 115);
+                grid-column: 1/3;
+                grid-row:2/3;
+              display: flex;
+                justify-content: center;
+            }
+            .parent__leftside{
+                background-color: rgb(84, 68, 71);
+                grid-column: 1/2;
+                grid-row:3/4;
+                display: flex;
+                justify-content: center;
+                
+            }
+            .parent__middle{
+                background-color:rgb(173, 191, 222);
+                grid-column: 2/3;
+                grid-row:3/4;
+                display: flex;
+                justify-content: center;
+            }
+            .parent__rightside{
+                background-color: grey;
+                grid-column: 3/4;
+                grid-row:2/4;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        
+      <div class="parent">
+        <div class="parent__header">Header</div>
+        <div class="parent__search">search</div>
+        <div class="parent__leftside">Leftslidebar</div>
+        <div class="parent__middle">Middlecoloumn</div>
+        <div class="parent__rightside">Rightslidebar</div>
+      </div>
+    </body>
+</html>

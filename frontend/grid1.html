@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRID</title>
+        <style>
+            .body{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 80% 10%;
+                grid-template-columns: 20% 60% 20%;
+            }
+            .parent__header{
+                background-color: yellow;
+                grid-column: 1/4;
+                grid-row:1/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent__leftmenu{
+                background-color: blue;
+                grid-column: 1/2;
+                grid-row:2/3;
+            }
+            .parent__main{
+                background-color: red;
+                grid-column: 2/3;
+                grid-row:2/3;
+            }
+            .parent__Rightmenu{
+                background-color:green;
+                grid-column: 3/4;
+                grid-row:2/3;
+            }
+            .parent__footer{
+                background-color: grey;
+                grid-column: 1/4;
+                grid-row:3/4;
+            }
+        </style>
+    </head>
+    <body>
+        
+      <div class="parent">
+        <div class="parent__header">Header</div>
+        <div class="parent__leftmenu">LEFTMENU</div>
+        <div class="parent__main">MAIN</div>
+        <div class="parent__Rightmenu">RIGHTMENU</div>
+        <div class="parent__footer">Footer</div>
+      </div>
+    </body>
+</html>
